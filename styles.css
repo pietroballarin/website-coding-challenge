@@ -1,0 +1,115 @@
+:root {
+    --font1: 'Fraunces', serif;
+    --width: 1080px;
+}
+
+body {
+    width: var(--width);
+    font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    width: var(--width);
+}
+
+header > nav {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 30px auto 0;
+    padding-top: 3px;
+    height: 10vh;
+}
+
+.menu-nav {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-nav > li {
+    margin-right: 35px;
+    list-style: none;
+}
+
+.menu-nav > li > a { 
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font1);
+}
+
+.contact-btn{
+    text-decoration: none;
+    color: #fff;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    margin: auto 0 2.5vh 0;
+    font-family: 'Fraunces', serif;
+    font-weight: 100;
+}
+
+section {
+    width: var(--width);
+    height: 100vh;
+    margin-bottom: 1000px
+}
+
+.gallery {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    
+}
+
+.big-img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.small-img {
+    width: 33%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: var(--width);
+    background-color: black;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 30px auto 0;
+    padding-top: 3px;
+    height: 10vh;
+}
+
+
+@media (max-width: 1079px) {
+
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+}
