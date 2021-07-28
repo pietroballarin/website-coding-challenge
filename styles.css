@@ -1,6 +1,7 @@
 :root {
     --font1: 'Fraunces', serif;
     --width: 1080px;
+    --mainclr: #8FD4C5;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: var(--mainclr);
     position: fixed;
     width: var(--width);
 }
@@ -49,60 +50,77 @@ header > nav {
     font-family: var(--font1);
 }
 
-.contact-btn{
-    text-decoration: none;
-    color: #fff;
-    color: black;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 10px 25px 10px 25px;
-    margin: auto 0 2.5vh 0;
-    font-family: 'Fraunces', serif;
-    font-weight: 100;
-}
-
-section {
+#content {
     width: var(--width);
     height: 100vh;
-    margin-bottom: 1000px
+    margin-bottom: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.gallery {
+.large-frame {
     display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
     width: 100%;
-    
 }
 
-.big-img {
+.gallery {
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    margin-top: 13vh;
+}
+
+.large-img {
     width: 70%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+}
+
+.img-desc {
+    font-family: var(--font1);
+    padding-top: 5vh;
+    color: #2D7365;
 }
 
 .small-img {
-    width: 33%;
+    width: 16.5%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 footer {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     width: var(--width);
-    background-color: black;
+    background-color: var(--mainclr);
     display: block;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     margin: auto 30px auto 0;
     padding-top: 3px;
-    height: 10vh;
+    height: 12vh;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9em;
+    font-family: 'Barlow', sans-serif;
+    padding: 2vh;
+    color: #fff;
 }
 
 
