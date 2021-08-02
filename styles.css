@@ -13,6 +13,7 @@ body {
 }
 
 header {
+    top: 0;
     background-color: var(--mainclr);
     position: fixed;
     width: var(--width);
